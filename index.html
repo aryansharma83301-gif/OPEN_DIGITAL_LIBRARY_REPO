@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Open Digital Library — Discover and read thousands of free books from a curated digital collection." />
+  <title>Open Digital Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header__icon">📚</div>
+    <h1 class="header__title">Open Digital Library</h1>
+    <p class="header__subtitle">Discover your next favourite read — free &amp; open for everyone.</p>
+
+    <div class="search-wrapper">
+      <!-- search icon (inline SVG) -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"/>
+      </svg>
+      <input type="text" id="search-input" placeholder="Search books by title…" autocomplete="off" />
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main">
+    <div class="section-heading">
+      <h2>Featured Collection</h2>
+      <p>Hand-picked titles to get you started</p>
+    </div>
+
+    <div class="book-grid" id="book-grid">
+      <!-- Cards are rendered dynamically by script.js -->
+
+      <!-- No Results Message -->
+      <div class="no-results" id="no-results">
+        <div class="no-results__icon">🔍</div>
+        <p class="no-results__text">No books match your search. Try a different title!</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    Made with <span>♥</span> — Open Digital Library &copy; 2026
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
